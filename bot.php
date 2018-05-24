@@ -9,8 +9,8 @@ Modified @ Farzain - zFz
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
-$channelAccessToken = 'YOUR-CHANNEL-ACCESS-TOKEN'; //sesuaikan 
-$channelSecret = 'YOUR-CHANNEL-SECRET-CODE';//sesuaikan
+$channelAccessToken = 'UP8r0sgPDu62JRC7lzPZ484idV0D+qxs9vQJWSrdCMI6eKYidOx0jaVvF42rjJWe4Ucvja5O0IKtgLuC+OYuPBNl1fYVBk5z1CNmyXix3W042+SStC2+maiYdRkSS+SQUQPRtLdg/g/BK7Ado6nPEAdB04t89/1O/w1cDnyilFU='; //sesuaikan 
+$channelSecret = '03c4b4b2e1bde884504094fc174db228';//sesuaikan
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -69,7 +69,7 @@ function shalat($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/menu') {
-    $text = "Assalamualaikum Kakak, aku adalah bot jadwal shalat, silahkan ketik\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
+    $text = "Assalamualaikum bre, Gue adalah Bot yang guna nya untuk menampilkan Jadwal Sholat, Silahkan ketik\n\n/shalat <nama tempat>\n\nanti gue bakalan kasih tahu jam berapa waktunya shalat";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -104,7 +104,7 @@ if($message['type']=='text') {
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Makasih Kak Stikernya ^_^'										
+										'text' => 'Thanks bre, Stikernya!'										
 									
 									)
 							)
